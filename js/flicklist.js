@@ -1,8 +1,8 @@
 
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   discoverMovies(render);
-});
+});*/
 
 
 
@@ -25,6 +25,8 @@ var api = {
  * the callback function that was passed in
  */
 function discoverMovies(callback) {
+  console.log("discovering movies");
+
   $.ajax({
     url: api.root + "/discover/movie",
     data: {
